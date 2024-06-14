@@ -1,0 +1,8 @@
+.hover-scale-animation {
+  transition: all 0.1s ease-in-out; /* Adjust animation duration and timing as needed */
+}
+
+.hover-scale-animation:hover {
+  /* Add your desired animation styles here */
+  opacity: 0.8; /* Example: Reduce opacity on hover */
+}

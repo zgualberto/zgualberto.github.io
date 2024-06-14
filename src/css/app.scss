@@ -1,0 +1,35 @@
+* {
+  font-family: 'Exo 2', sans-serif;
+}
+
+a,
+button,
+.q-btn {
+  text-transform: none;
+}
+
+.q-item.q-router-link--active {
+  color: inherit;
+}
+
+.q-item--active.q-item--dark {
+  color: #fff;
+}
+
+.btn--no-hover {
+  background: inherit;
+}
+
+.btn--no-hover .q-focus-helper {
+  display: none;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
