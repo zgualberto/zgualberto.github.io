@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md">
+  <div>
     <div class="text-h6 q-my-sm">
       Years of experience:
       <strong
