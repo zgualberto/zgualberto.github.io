@@ -22,7 +22,7 @@
         <div class="q-pt-lg q-px-lg text-center">
           <div class="row justify-center full-width">
             <q-avatar size="56px" class="q-mb-sm">
-              <img src="/src/assets/images/2x2.jpg" />
+              <img :src="myImage" />
             </q-avatar>
           </div>
           <div class="full-width">
@@ -133,6 +133,7 @@
 <script setup lang="ts">
 import { copyToClipboard, useQuasar } from 'quasar';
 import { ref } from 'vue';
+import myImage from '../assets/images/2x2.jpg';
 
 const q = useQuasar();
 
