@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="q-pa-sm">
     <div class="text-h6 q-my-sm">
       Years of experience:
       <strong
@@ -345,7 +345,6 @@
             <div class="text-bold">Technologies and Platform used:</div>
             <ul>
               <li>PHP</li>
-              <li>Laravel</li>
               <li>MySQL</li>
               <li>Javascript</li>
               <li>jQuery</li>
