@@ -133,7 +133,9 @@
 <script setup lang="ts">
 import { copyToClipboard, useQuasar } from 'quasar';
 import { ref } from 'vue';
-import myImage from '../assets/images/2x2.jpg';
+import myPic from '../assets/images/2x2.jpg';
+
+const myImage = ref(myPic);
 
 const q = useQuasar();
 
