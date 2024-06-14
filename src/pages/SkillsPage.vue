@@ -25,15 +25,15 @@
           <div
             v-for="(skill, key) in item.items"
             :key="key"
-            class="q-mr-lg q-my-md"
+            class="q-my-md q-mx-sm"
             :class="{
-              'col-12': $q.screen.lt.sm,
+              'col-6': $q.screen.lt.sm,
               'col-4': $q.screen.lt.md,
               'col-3': $q.screen.gt.md,
             }"
             style="width: auto"
           >
-            <q-card flat bordered class="q-pa-md skills-card">
+            <q-card flat bordered class="q-pa-sm skills-card">
               <div class="row justify-center items-center">
                 <q-knob
                   v-model="skill.rating"

@@ -106,7 +106,11 @@
     </q-drawer>
 
     <q-page-container>
-      <q-page class="q-pa-lg" :style="`height: ${windowInnerHeight}px;`">
+      <q-page
+        class="q-py-lg"
+        :class="{ 'q-px-sm': $q.screen.lt.sm }"
+        :style="`height: ${windowInnerHeight}px;`"
+      >
         <router-view v-slot="{ Component }">
           <transition
             appear
