@@ -1,0 +1,1 @@
+.blink{margin-bottom:3px}.blink:after{content:"|";animation:blink 1s infinite step-start}@keyframes blink{50%{opacity:0}}@media only screen and (max-width: var(--q-size-sm)){.blink{margin-bottom:0}}
