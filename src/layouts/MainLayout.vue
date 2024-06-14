@@ -71,7 +71,7 @@
           <q-btn
             flat
             icon="fa-brands fa-viber"
-            href="viber://chat?number=09176523658"
+            href="viber://add?number=639176523658"
             class="btn--no-hover"
           ></q-btn>
           <q-btn
