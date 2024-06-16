@@ -1,22 +1,17 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
+      <div class="text-h4">404</div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
+      <div class="text-h5" style="opacity: 0.4">Oops. Nothing here...</div>
 
       <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
+        class="q-mt-lg"
         unelevated
         to="/"
         label="Go Home"
         no-caps
+        outline
       />
     </div>
   </div>
@@ -24,6 +19,6 @@
 
 <script setup lang="ts">
 defineOptions({
-  name: 'ErrorNotFound'
+  name: 'ErrorNotFound',
 });
 </script>
