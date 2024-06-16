@@ -27,10 +27,6 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
-  {
-    path: '/#',
-    redirect: { name: 'home' },
-  },
 
   // Always leave this as last one,
   // but you can also remove it
