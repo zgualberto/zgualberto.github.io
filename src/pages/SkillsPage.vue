@@ -102,8 +102,8 @@ const skills = ref([
       {
         label: 'Laravel',
         rating: 8,
-        lastUsed: '2020',
-        yearsExp: 5,
+        lastUsed: 'Present',
+        yearsExp: 7,
         tags: [
           'php',
           'laravel',
