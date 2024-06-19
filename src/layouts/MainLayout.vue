@@ -39,6 +39,15 @@
               ></q-icon>
             </a>
           </div>
+          <q-tooltip
+            v-model="clipCopiedTooltip"
+            :delay="2000"
+            class="text-bold"
+            style="opacity: 0.6"
+            @hide="handleRestoreEmailIcon"
+          >
+            Copied
+          </q-tooltip>
         </div>
 
         <div class="full-width">
@@ -143,6 +152,7 @@ import { ref } from 'vue';
 import myPic from '../assets/images/2x2.jpg';
 
 const myImage = ref(myPic);
+const clipCopiedTooltip = ref(false);
 
 const q = useQuasar();
 
@@ -167,6 +177,11 @@ function toggleLeftDrawer() {
 
 const handleEmailClipboard = () => {
   copyToClipboard('ziegfrid.gualberto@gmail.com');
+  clipCopiedTooltip.value = true;
   emailClipboardIcon.value = 'fa-solid fa-clipboard-check';
+};
+
+const handleRestoreEmailIcon = () => {
+  emailClipboardIcon.value = 'fa-regular fa-copy';
 };
 </script>
