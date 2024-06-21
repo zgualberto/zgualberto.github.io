@@ -18,7 +18,7 @@
       >
         <q-card>
           <q-card-section>
-            <strong>Duration:</strong> May 2020 to present
+            <strong>Duration:</strong> May 2022 to present
             <div class="text-bold q-mt-sm">Duties and Responsibilities</div>
 
             <ul>
