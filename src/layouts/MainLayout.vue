@@ -17,7 +17,11 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" style="overflow: hidden">
+    <q-drawer
+      v-model="leftDrawerOpen"
+      style="overflow: hidden"
+      :persistent="!$q.screen.lt.sm"
+    >
       <div class="row items-start full-height">
         <div class="q-pt-lg q-px-lg text-center">
           <div class="row justify-center full-width">
