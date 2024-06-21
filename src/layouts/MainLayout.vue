@@ -120,7 +120,7 @@
 
     <q-page-container>
       <q-page
-        class="q-py-md page-container"
+        class="q-py-sm page-container"
         :class="{
           'q-px-md': !$q.screen.lt.sm,
           'q-px-sm': $q.screen.lt.sm,
