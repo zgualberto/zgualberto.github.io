@@ -116,12 +116,11 @@
 
     <q-page-container>
       <q-page
-        class="q-py-lg"
+        class="q-py-lg page-container"
         :class="{
           'q-px-md': !$q.screen.lt.sm,
           'q-px-sm': $q.screen.lt.sm,
         }"
-        :style="`height: ${windowInnerHeight}px;`"
       >
         <router-view v-slot="{ Component }">
           <transition
@@ -156,8 +155,6 @@ const clipCopiedTooltip = ref(false);
 
 const q = useQuasar();
 
-const windowInnerHeight = ref(window.innerHeight);
-
 defineOptions({
   name: 'MainLayout',
 });
@@ -185,3 +182,15 @@ const handleRestoreEmailIcon = () => {
   emailClipboardIcon.value = 'fa-regular fa-copy';
 };
 </script>
+
+<style lang="scss" scoped>
+.page-container {
+  height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    height: calc(100vh - 60px);
+  }
+}
+</style>

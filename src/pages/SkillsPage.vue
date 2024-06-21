@@ -1,5 +1,5 @@
 <template>
-  <div class="q-mb-lg">
+  <div class="q-mb-sm">
     <q-input
       v-model="search"
       label="Search for skills"
@@ -12,7 +12,7 @@
   <q-virtual-scroll
     :items="filteredSkills"
     v-slot="{ item }"
-    style="min-height: 100%"
+    style="height: calc(100vh - 150px)"
   >
     <div class="q-mb-lg">
       <div class="text-h5">{{ item.category }}</div>
