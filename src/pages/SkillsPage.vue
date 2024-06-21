@@ -12,7 +12,7 @@
   <q-virtual-scroll
     :items="filteredSkills"
     v-slot="{ item }"
-    style="height: calc(100vh - 150px)"
+    style="height: calc(100vh - 160px)"
   >
     <div class="q-mb-lg">
       <div class="text-h5">{{ item.category }}</div>
