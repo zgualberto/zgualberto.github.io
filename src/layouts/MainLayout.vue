@@ -45,10 +45,11 @@
           </div>
           <q-tooltip
             v-model="clipCopiedTooltip"
-            :delay="2000"
             class="text-bold"
             style="opacity: 0.6"
             @hide="handleRestoreEmailIcon"
+            :no-parent-event="true"
+            :persistent="false"
           >
             Copied
           </q-tooltip>
