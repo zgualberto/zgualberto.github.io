@@ -10,6 +10,5 @@ const actions = [
   { icon: 'fa-brands fa-whatsapp', href: 'https://wa.me/639176523658', target: '_blank' },
   { icon: 'fa-solid fa-comment-sms', href: 'sms://+639176523658', target: undefined },
   { icon: 'fa-brands fa-linkedin', href: 'https://www.linkedin.com/in/ziegfrid-gualberto/', target: '_blank' },
-  { icon: 'fa-brands fa-github', href: 'https://github.com/zgualberto', target: '_blank' },
 ];
 </script>
