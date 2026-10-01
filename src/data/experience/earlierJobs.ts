@@ -1,0 +1,48 @@
+import type { ExperienceJob } from './types';
+
+export const earlierJobs: ExperienceJob[] = [
+  {
+    company: 'Cloud Employee',
+    role: 'Senior PHP Developer',
+    type: 'Full-time · Client-based',
+    location: 'Makati City',
+    start: 'Apr 2019',
+    end: 'Oct 2019',
+    summary: "Wren's Kitchens Symfony applications.",
+    achievements: ['Built Symfony 3/4 apps and mentored juniors.'],
+    techStack: ['PHP', 'Symfony', 'MySQL', 'Doctrine'],
+  },
+  {
+    company: 'Stratpoint Technologies',
+    role: 'Software Engineer',
+    type: 'Full-time',
+    location: 'Mandaluyong City',
+    start: 'Aug 2017',
+    end: 'Apr 2019',
+    summary: 'Enterprise apps, APIs and serverless capability.',
+    achievements: ['Built REST APIs, auth and reporting systems.'],
+    techStack: ['PHP', 'Laravel', 'Node.js', 'Serverless', 'MySQL'],
+  },
+  {
+    company: 'Summit Publishing',
+    role: 'Web Programmer',
+    type: 'Full-time',
+    location: 'Mandaluyong City',
+    start: 'Oct 2015',
+    end: 'Aug 2017',
+    summary: 'Media sites, ads and content platforms.',
+    achievements: ['Shipped Laravel/CodeIgniter apps with Redis queues.'],
+    techStack: ['PHP', 'Laravel', 'CodeIgniter', 'Redis', 'MySQL'],
+  },
+  {
+    company: 'Empire East Land Holdings',
+    role: 'Assistant Programmer',
+    type: 'Full-time',
+    location: 'Makati City',
+    start: 'Jul 2012',
+    end: 'Oct 2015',
+    summary: 'Internal business systems and reports.',
+    achievements: ['Developed modules, reports and DB fixes.'],
+    techStack: ['PHP', 'MySQL', 'JavaScript', 'jQuery'],
+  },
+];
