@@ -22,6 +22,6 @@ import { useFilteredSkills } from './Skills/composables/useFilteredSkills';
 
 const search = ref('');
 const precise = ref(false);
-const all = [languages, backend, frontend, databases, cloudDevOps, architecture, tools, webTech, aiTools];
+const all = [aiTools, languages, backend, frontend, databases, cloudDevOps, architecture, tools, webTech];
 const filtered = useFilteredSkills(all, search, precise);
 </script>

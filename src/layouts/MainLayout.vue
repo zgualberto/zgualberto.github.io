@@ -21,7 +21,7 @@
         </router-view>
       </q-page>
       <q-page-sticky position="bottom-right" :offset="[18, 18]">
-        <q-btn fab icon="fa-solid fa-circle-half-stroke" :color="$q.dark.isActive ? 'white' : 'dark'" @click="$q.dark.toggle" />
+        <q-btn fab icon="fa-solid fa-circle-half-stroke" color="dark" @click="$q.dark.toggle" />
       </q-page-sticky>
     </q-page-container>
   </q-layout>
