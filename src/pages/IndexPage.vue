@@ -29,8 +29,6 @@
 import VTypical from 'vue-typical';
 
 const roles = [
-  'Web Developer',
-  1000,
   'Backend Developer',
   1000,
   'Full-Stack Developer',
