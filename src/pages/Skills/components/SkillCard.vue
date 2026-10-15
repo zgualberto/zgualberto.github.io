@@ -1,23 +1,21 @@
 <template>
-  <q-card flat bordered class="q-pa-sm skills-card">
-    <div class="row justify-center items-center">
-      <q-knob
-        :model-value="skill.rating"
-        show-value
-        size="110px"
-        :thickness="0.2"
-        :max="10"
-        color="primary"
-        track-color="blue-grey-2"
-        class="q-ma-md"
-        readonly
-      />
+  <div class="drac-surface q-pa-md skill-card">
+    <div class="row items-center justify-between no-wrap q-mb-xs">
+      <div class="text-weight-bold ellipsis">{{ skill.label }}</div>
+      <div class="font-mono text-caption q-ml-sm" style="color: #8be9fd">{{ skill.rating }}/10</div>
     </div>
-    <q-separator class="q-mb-md" />
-    <div class="text-center">{{ skill.label }}</div>
-    <div class="text-center">Last Used: {{ lastUsed }}</div>
-    <div class="text-center">Usage: {{ yearsExp }} year(s)</div>
-  </q-card>
+    <q-linear-progress
+      :value="skill.rating / 10"
+      size="6px"
+      rounded
+      color="cyan"
+      track-color="dark"
+      style="background: #44475a"
+    />
+    <div class="font-mono text-caption q-mt-xs" style="color: #9aa3c7">
+      {{ yearsExp }} yr{{ yearsExp === 1 ? '' : 's' }} · {{ lastUsed }}
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -32,7 +30,12 @@ const lastUsed = computed(() => getLastUsed(props.skill.endYear));
 </script>
 
 <style lang="scss" scoped>
-.skills-card {
-  transition: all 0.5s ease-in-out;
+.skill-card {
+  height: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.skill-card:hover {
+  border-color: #8be9fd;
 }
 </style>

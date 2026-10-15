@@ -1,8 +1,15 @@
 <template>
-  <SkillSearchBar v-model:search="search" v-model:precise="precise" />
-  <q-virtual-scroll :items="filtered" v-slot="{ item }" style="height: calc(100vh - 200px)">
-    <SkillCategorySection :category="item" />
-  </q-virtual-scroll>
+  <div>
+    <div class="font-mono text-drac-purple q-mb-xs">## skills/</div>
+    <h1 class="font-mono text-h5 text-weight-bold q-mt-none q-mb-md">What I work with</h1>
+    <SkillSearchBar v-model:search="search" v-model:precise="precise" />
+    <div class="q-mt-md">
+      <SkillCategorySection v-for="item in filtered" :key="item.category" :category="item" />
+    </div>
+    <div v-if="filtered.length === 0" class="text-center q-mt-lg font-mono" style="color: #9aa3c7">
+      $ no matches — try clearing search
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">

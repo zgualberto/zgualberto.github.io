@@ -8,7 +8,6 @@
       ziegfrid.gualberto@gmail.com
       <q-icon size="15px" class="q-pl-sm" :name="icon" />
     </a>
-    <q-tooltip v-model="copied" @hide="resetIcon">Copied</q-tooltip>
   </div>
 </template>
 
@@ -25,9 +24,5 @@ function copyEmail() {
   copyToClipboard('ziegfrid.gualberto@gmail.com');
   copied.value = true;
   icon.value = 'fa-solid fa-clipboard-check';
-}
-
-function resetIcon() {
-  icon.value = 'fa-regular fa-copy';
 }
 </script>

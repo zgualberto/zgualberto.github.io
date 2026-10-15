@@ -1,7 +1,16 @@
 <template>
-  <div class="q-mb-sm">
-    <q-input :model-value="search" label="Search for skills" outlined clearable @update:model-value="onSearch" />
-    <q-toggle :model-value="precise" label="Precise searching" @update:model-value="onPrecise" />
+  <div class="q-mb-md row q-gutter-sm">
+    <q-input
+      :model-value="search"
+      label="Search skills"
+      outlined
+      dense
+      dark
+      clearable
+      class="col-12 col-sm-6"
+      @update:model-value="onSearch"
+    />
+    <q-toggle :model-value="precise" label="Precise" dark @update:model-value="onPrecise" />
   </div>
 </template>
 

@@ -1,5 +1,25 @@
-* {
-  font-family: 'Exo 2', sans-serif;
+body {
+  font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+:root {
+  --drac-bg: #282a36;
+  --drac-surface: #343746;
+  --drac-border: #44475a;
+  --drac-fg: #f8f8f2;
+  --drac-muted: #6272a4;
+  --drac-purple: #8be9fd;
+  --drac-pink: #50fa7b;
+  --drac-cyan: #8be9fd;
+  --drac-green: #50fa7b;
+  --drac-orange: #ffb86c;
+  --drac-mono: ui-monospace, 'Cascadia Code', 'JetBrains Mono', Menlo, Consolas,
+    monospace;
+}
+
+body {
+  background: var(--drac-bg);
+  color: var(--drac-fg);
 }
 
 a,
@@ -8,8 +28,28 @@ button,
   text-transform: none;
 }
 
+.font-mono {
+  font-family: var(--drac-mono);
+}
+
+.text-drac-purple {
+  color: var(--drac-purple);
+}
+.text-drac-pink {
+  color: var(--drac-pink);
+}
+.text-drac-muted {
+  color: #9aa3c7;
+}
+
+.drac-surface {
+  background: var(--drac-surface);
+  border: 1px solid var(--drac-border);
+  border-radius: 10px;
+}
+
 .q-item.q-router-link--active {
-  color: inherit;
+  color: var(--drac-purple);
 }
 
 .q-item--active.q-item--dark {
@@ -22,14 +62,4 @@ button,
 
 .btn--no-hover .q-focus-helper {
   display: none;
-}
-
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
 }

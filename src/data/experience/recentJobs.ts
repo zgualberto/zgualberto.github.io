@@ -7,7 +7,7 @@ export const recentJobs: ExperienceJob[] = [
     type: 'Project-based · Remote',
     location: 'Remote',
     start: 'Mar 2025',
-    end: null,
+    end: 'July 2026',
     summary: 'Scalable backend APIs and cloud-native apps.',
     achievements: [
       'Design and build API and data solutions with Node.js and TypeScript.',
@@ -31,6 +31,14 @@ export const recentJobs: ExperienceJob[] = [
       'Managed deployments via Azure Pipelines and Container Registry.',
       'Delivered production-ready software with cross-functional teams.',
     ],
-    techStack: ['NestJS', 'Vue 3', 'Quasar', 'MSSQL', 'Docker', 'Azure'],
+    techStack: [
+      'NestJS',
+      'Vue 3',
+      'Quasar',
+      'MSSQL',
+      'Docker',
+      'Azure',
+      'Laravel',
+    ],
   },
 ];

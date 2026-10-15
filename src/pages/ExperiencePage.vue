@@ -1,9 +1,12 @@
 <template>
-  <div class="q-px-sm q-pb-lg">
-    <div class="text-h4 q-mb-sm text-center">
-      Years of experience: <strong>{{ totalYears }} years</strong>
-    </div>
-    <div class="text-h5 q-mb-md text-center">Senior Backend / Full Stack · Node.js · Laravel · Cloud</div>
+  <div class="q-pb-lg">
+    <div class="font-mono text-drac-purple q-mb-xs">## experience/</div>
+    <h1 class="font-mono text-h5 text-weight-bold q-mt-none q-mb-xs">
+      {{ totalYears }} years shipping backends
+    </h1>
+    <p class="font-mono text-caption q-mt-none q-mb-md" style="color: #9aa3c7">
+      Senior Backend / Full Stack · Node.js · Laravel · Cloud
+    </p>
     <ExperienceTimeline :jobs="allJobs" />
   </div>
 </template>
