@@ -1,0 +1,1 @@
+let t=[],n=[];function o(e){e.focus({preventScroll:!0})}function a(e){n=n.filter(u=>u!==e)}function c(e){a(e),n.push(e)}function s(e){a(e),n.length===0&&t.length!==0&&(t.at(-1)(),t=[])}function l(e){n.length===0?e():t.push(e)}function i(e){t=t.filter(u=>u!==e)}export{c as a,l as b,o as c,i as d,s as r};

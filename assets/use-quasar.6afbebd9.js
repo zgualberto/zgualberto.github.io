@@ -1,0 +1,1 @@
+import{j as a,i as e,ab as o}from"./index.3caafb1a.js";function u(n,t){return n!==void 0&&n()||t}function c(n,t){if(n!==void 0){const r=n();if(r!=null)return[...r]}return t}function f(n,t){return n!==void 0?t.concat(n()):t}function s(){var n,t;return(t=(n=a())==null?void 0:n.appContext.config.globalProperties.$q)!=null?t:e(o)}export{c as a,f as b,u as h,s as u};

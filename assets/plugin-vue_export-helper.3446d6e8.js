@@ -1,0 +1,1 @@
+const o={dark:{type:Boolean,default:null}};function s(a,r){return()=>a.dark===null?r.dark.isActive:a.dark}var u=(a,r)=>{const t=a.__vccOpts||a;for(const[e,n]of r)t[e]=n;return t};export{u as _,s as a,o as u};
